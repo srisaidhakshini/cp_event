@@ -5,8 +5,7 @@ import "./globals.css";
 import Providers from "./providers";
 import { Navbar } from "@/components/navbar";
 import CustomCursor from "@/components/CustomCursor";
-import Providers from "./providers";
-import { Navbar } from "@/components/navbar";
+
 
 const inter = Inter({
   variable: "--font-sans",
