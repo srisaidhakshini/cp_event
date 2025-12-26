@@ -6,7 +6,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { connectDB } from '@/lib/db';
 import { TeamScore, Question, Team } from '@/models';
-import { fetchTeamSubmissions } from '@/services/codeforcesService'; // ✅ ADD THIS
+import { fetchTeamSubmissions } from '@/services/codeforcesService';
 import { calculateTeamScore } from '@/services/bingoCalculator';
 import { checkRateLimit } from '@/lib/rateLimit';
 import type { SyncResponse } from '@/types';
