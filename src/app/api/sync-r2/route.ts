@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
     const teamId = session.user.teamId;
 
     const identifier = `${teamId}_r2`;
-    const rateLimit = checkRateLimit(identifier, 5, 60000);
+    const rateLimit = await checkRateLimit(identifier, 5, 60000);
 
     if (rateLimit.limited) {
       const resetIn = Math.ceil((rateLimit.resetTime - Date.now()) / 1000);
